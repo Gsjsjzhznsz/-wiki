@@ -1,0 +1,22 @@
+{
+  "name": "yiqiu-wiki",
+  "version": "1.0.0",
+  "description": "一秋小镇 Minecraft 服务器 Wiki",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "Gsjsjzhznsz",
+  "license": "ISC",
+  "dependencies": {
+    "@astrojs/starlight": "^0.41.7",
+    "@astrojs/starlight-tailwind": "^5.0.0",
+    "@iconify-json/ri": "^1.2.10",
+    "astro": "^7.2.4",
+    "astro-icon": "^1.2.0",
+    "tailwindcss": "^4.3.3"
+  }
+}

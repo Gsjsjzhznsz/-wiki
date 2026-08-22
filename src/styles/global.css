@@ -1,0 +1,105 @@
+@import "@astrojs/starlight-tailwind";
+
+/* ===== 一秋小镇 Wiki 主题色 ===== */
+:root {
+  /* 主色调: 秋日暖橙 */
+  --sl-color-accent-low: #78350f;
+  --sl-color-accent: #d97706;
+  --sl-color-accent-high: #fbbf24;
+  --sl-color-accent-full: #92400e;
+
+  /* 绿色辅助: 生电/红石感 */
+  --sl-color-success: #16a34a;
+}
+
+[data-theme='dark'] {
+  --sl-color-bg: #0c0a09;
+  --sl-color-bg-sidebar: #1c1917;
+  --sl-color-bg-nav: #1c1917;
+  --sl-color-text: #fafaf9;
+  --sl-color-text-muted: #a8a29e;
+  --sl-color-text-accent: #fbbf24;
+  --sl-color-hairline: #292524;
+  --sl-color-hairline-light: #44403c;
+  --sl-color-panel: #1c1917;
+  --sl-color-panel-border: #292524;
+  --sl-color-code-bg: #292524;
+  --sl-color-code-inline-bg: #292524;
+}
+
+[data-theme='light'] {
+  --sl-color-bg: #fffbeb;
+  --sl-color-bg-sidebar: #fef3c7;
+  --sl-color-bg-nav: #fffbeb;
+  --sl-color-text: #1c1917;
+  --sl-color-text-muted: #78716c;
+  --sl-color-text-accent: #92400e;
+  --sl-color-hairline: #e7e5e4;
+  --sl-color-hairline-light: #d6d3d1;
+  --sl-color-panel: #ffffff;
+  --sl-color-panel-border: #e7e5e4;
+}
+
+/* 首页卡片样式优化 */
+.sl-starlight-landing [class*='card'] {
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.sl-starlight-landing [class*='card']:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.15);
+}
+
+/* 表格美化 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+th {
+  background-color: var(--sl-color-accent-low);
+  color: #fafaf9;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.625rem 1rem;
+  border-bottom: 1px solid var(--sl-color-hairline);
+}
+
+tr:nth-child(even) td {
+  background-color: color-mix(in srgb, var(--sl-color-accent) 5%, transparent);
+}
+
+/* 提示框样式 */
+[role='note'] {
+  border-left: 4px solid var(--sl-color-accent);
+  border-radius: 0 8px 8px 0;
+}
+
+/* 代码块圆角 */
+pre {
+  border-radius: 8px;
+}
+
+/* 滚动条美化 */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sl-color-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sl-color-hairline-light);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sl-color-accent);
+}
