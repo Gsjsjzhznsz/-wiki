@@ -15,34 +15,15 @@ hero:
       variant: secondary
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
 import ServerStatus from '../../components/ServerStatus.astro';
+import FeatureCards from '../../components/FeatureCards.astro';
 import banner from '../../assets/banner.svg';
 
-<img src={banner.src} alt="一秋小镇 Banner" class="hero-banner" />
+<img src={banner.src} alt="一秋小镇" class="hero-banner" />
 
 <ServerStatus />
 
-<CardGrid stagger>
-  <Card title="Folia 多线程" icon="zap">
-    基于多线程架构深度优化，突破单线程瓶颈，百人同屏 TPS 稳定 20.0。
-  </Card>
-  <Card title="全版本兼容" icon="globe">
-    Java 1.7~26.2 全版本覆盖，基岩版无缝接入，一份地图多端畅玩。
-  </Card>
-  <Card title="纯生电体验" icon="pencil">
-    无魔改合成表、无强制付费，保留原版机制，红石自由创造。
-  </Card>
-  <Card title="实时在线地图" icon="map">
-    SquareMap 动态地图随时俯瞰领地全貌，区块加载一目了然。
-  </Card>
-  <Card title="完善经济体系" icon="set">
-    QuickShop + UltimateShop + NPC 商店，交易透明高效，贸易自动化。
-  </Card>
-  <Card title="安全公平" icon="shield">
-    GrimAC 反作弊 + Dominion 领地保护 + AuthMe 账户安全，全方位守护。
-  </Card>
-</CardGrid>
+<FeatureCards />
 
 ---
 
@@ -59,6 +40,8 @@ import banner from '../../assets/banner.svg';
 | 备用地址 | `frp-oak.com:58016` |
 | 基岩版地址 | `be.mysv.dpdns.org:19131` |
 | IPv6 地址 | `ipv6.mysv.dpdns.org:19131` |
+| 世界地图 | [SquareMap](http://cn-hk1.mfrp.space:30212) |
+| QQ 群 | [194636275](https://qm.qq.com/q/5BaZIV1ipi) |
 
 ## 为什么选择一秋小镇？
 

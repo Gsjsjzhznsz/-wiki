@@ -104,6 +104,16 @@ export default defineConfig({
           href: 'https://github.com/Gsjsjzhznsz/-wiki',
           icon: 'github',
         },
+        {
+          label: 'QQ群',
+          href: 'https://qm.qq.com/q/5BaZIV1ipi',
+          icon: 'discord',
+        },
+        {
+          label: '世界地图',
+          href: 'http://cn-hk1.mfrp.space:30212',
+          icon: 'external',
+        },
       ],
       head: [
         {

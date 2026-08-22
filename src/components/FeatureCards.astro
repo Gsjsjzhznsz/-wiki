@@ -1,0 +1,135 @@
+---
+const features = [
+  {
+    title: 'Folia 多线程',
+    desc: '突破单线程瓶颈，百人同屏 TPS 稳定 20.0',
+    icon: 'cpu',
+    color: '#f59e0b'
+  },
+  {
+    title: '全版本兼容',
+    desc: 'Java 1.7~26.2 + 基岩版，一份地图多端畅玩',
+    icon: 'layers',
+    color: '#3b82f6'
+  },
+  {
+    title: '纯生电体验',
+    desc: '无魔改合成表、无强制付费，红石自由创造',
+    icon: 'pickaxe',
+    color: '#22c55e'
+  },
+  {
+    title: '实时在线地图',
+    desc: 'SquareMap 动态地图俯瞰领地全貌',
+    icon: 'map',
+    color: '#a855f7',
+    href: 'http://cn-hk1.mfrp.space:30212'
+  },
+  {
+    title: '完善经济体系',
+    desc: '玩家商店 + 全局商店 + NPC商店，贸易自动化',
+    icon: 'coins',
+    color: '#eab308'
+  },
+  {
+    title: '安全公平',
+    desc: 'GrimAC 反作弊 + 领地保护 + 账户安全',
+    icon: 'shield',
+    color: '#ef4444'
+  },
+];
+---
+
+<div class="fc-grid">
+  {features.map((f, i) => (
+    <a href={f.href || '#'} class="fc-card" style={`--fc-color: ${f.color}; --fc-delay: ${i * 0.08}s`} target={f.href ? '_blank' : undefined} rel={f.href ? 'noopener' : undefined}>
+      <div class="fc-icon-wrap">
+        {f.icon === 'cpu' && <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>}
+        {f.icon === 'layers' && <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>}
+        {f.icon === 'pickaxe' && <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.531 12.469L6.619 20.38a1 1 0 1 1-1.414-1.414l7.912-7.912"/><path d="M15.686 4.314A12.5 12.5 0 0 0 5.461 2.958l-.025.025 3.89 3.89"/><path d="M19.686 8.314a12.5 12.5 0 0 1 1.356 10.225l-.025-.025-3.89-3.89"/></svg>}
+        {f.icon === 'map' && <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>}
+        {f.icon === 'coins' && <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="6"/><path d="M18.09 10.37A6 6 0 1 1 10.34 18"/><path d="M7 6h1v4"/><path d="m16.71 13.88.7.71-2.82 2.82"/></svg>}
+        {f.icon === 'shield' && <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>}
+      </div>
+      <div class="fc-text">
+        <h3 class="fc-title">{f.title}</h3>
+        <p class="fc-desc">{f.desc}</p>
+      </div>
+    </a>
+  ))}
+</div>
+
+<style>
+  .fc-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+  }
+  .fc-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--sl-color-panel);
+    border: 1px solid var(--sl-color-hairline);
+    border-radius: 14px;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    opacity: 0;
+    animation: fc-fade-in 0.5s ease-out forwards;
+    animation-delay: var(--fc-delay);
+  }
+  @keyframes fc-fade-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fc-card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--fc-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+  }
+  .fc-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+    border-color: color-mix(in srgb, var(--fc-color) 30%, var(--sl-color-hairline));
+  }
+  .fc-card:hover::before {
+    transform: scaleX(1);
+  }
+  .fc-icon-wrap {
+    width: 44px; height: 44px; border-radius: 10px;
+    background: color-mix(in srgb, var(--fc-color) 12%, transparent);
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+    color: var(--fc-color);
+    transition: transform 0.25s ease, background 0.25s ease;
+  }
+  .fc-card:hover .fc-icon-wrap {
+    transform: scale(1.08);
+    background: color-mix(in srgb, var(--fc-color) 18%, transparent);
+  }
+  .fc-title {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 0.3rem;
+    color: var(--sl-color-text);
+  }
+  .fc-desc {
+    font-size: 0.85rem;
+    margin: 0;
+    color: var(--sl-color-text-muted);
+    line-height: 1.5;
+  }
+  @media (max-width: 640px) {
+    .fc-grid { grid-template-columns: 1fr; }
+  }
+</style>
