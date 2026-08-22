@@ -16,12 +16,12 @@ hero:
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
+import ServerStatus from '../../components/ServerStatus.astro';
+import banner from '../../assets/banner.svg';
 
-## 一秋小镇 — 你的工业帝国起点
+<img src={banner.src} alt="一秋小镇 Banner" class="hero-banner" />
 
-一秋小镇是一个聚焦**原版生存与红石科技**的 Minecraft 社区服务器。我们基于 **Folia 多线程架构**深度优化，搭载完整的 **Via 系列协议兼容**与 **Geyser 基岩版互通**，为 Java 1.7~26.2 和基岩版玩家提供一致的原版生存体验。
-
-服务器秉承**轻量化插件**理念——仅保留必要功能，无花哨 RPG 或付费特权干扰核心玩法，让每一位玩家都能专注于创造与探索。
+<ServerStatus />
 
 <CardGrid stagger>
   <Card title="Folia 多线程" icon="zap">
@@ -46,7 +46,7 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ---
 
-## 服务器信息一览
+## 服务器信息
 
 | 项目 | 信息 |
 |------|------|

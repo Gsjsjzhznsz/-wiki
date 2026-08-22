@@ -2,16 +2,14 @@
 
 /* ===== 一秋小镇 Wiki 主题色 ===== */
 :root {
-  /* 主色调: 秋日暖橙 */
   --sl-color-accent-low: #78350f;
   --sl-color-accent: #d97706;
   --sl-color-accent-high: #fbbf24;
   --sl-color-accent-full: #92400e;
-
-  /* 绿色辅助: 生电/红石感 */
   --sl-color-success: #16a34a;
 }
 
+/* ===== 暗色主题 ===== */
 [data-theme='dark'] {
   --sl-color-bg: #0c0a09;
   --sl-color-bg-sidebar: #1c1917;
@@ -27,6 +25,7 @@
   --sl-color-code-inline-bg: #292524;
 }
 
+/* ===== 亮色主题 ===== */
 [data-theme='light'] {
   --sl-color-bg: #fffbeb;
   --sl-color-bg-sidebar: #fef3c7;
@@ -40,67 +39,257 @@
   --sl-color-panel-border: #e7e5e4;
 }
 
-/* 首页卡片样式优化 */
-.sl-starlight-landing [class*='card'] {
-  border-radius: 12px;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-.sl-starlight-landing [class*='card']:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(217, 119, 6, 0.15);
+/* ===== 全局基础 ===== */
+body {
+  font-feature-settings: "kern" 1, "liga" 1;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-/* 表格美化 */
+/* ===== 首页 Hero 区域 ===== */
+.sl-starlight-landing {
+  position: relative;
+}
+
+.sl-starlight-landing .hero {
+  background: linear-gradient(135deg, #1c1917 0%, #292524 50%, #1c1917 100%) !important;
+  padding-bottom: 3rem !important;
+}
+
+.sl-starlight-landing .hero img {
+  border-radius: 16px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5);
+}
+
+.sl-starlight-landing .hero h1 {
+  background: linear-gradient(135deg, #fbbf24, #d97706, #fbbf24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800 !important;
+  letter-spacing: 0.02em;
+}
+
+.sl-starlight-landing .hero p {
+  color: #d6d3d1 !important;
+  font-size: 1.15rem;
+}
+
+.sl-starlight-landing .hero .starlight-button--primary {
+  background: linear-gradient(135deg, #d97706, #b45309) !important;
+  border-color: #d97706 !important;
+  font-weight: 600 !important;
+  box-shadow: 0 4px 14px rgba(217, 119, 6, 0.35);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.sl-starlight-landing .hero .starlight-button--primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(217, 119, 6, 0.5);
+}
+
+.sl-starlight-landing .hero .starlight-button--secondary {
+  border-color: #78716c !important;
+  color: #e7e5e4 !important;
+  font-weight: 500 !important;
+  transition: border-color 0.15s ease;
+}
+.sl-starlight-landing .hero .starlight-button--secondary:hover {
+  border-color: #d97706 !important;
+  color: #fbbf24 !important;
+}
+
+/* ===== 首页卡片 ===== */
+.sl-starlight-landing [class*='card'] {
+  border-radius: 12px;
+  border: 1px solid var(--sl-color-hairline);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+.sl-starlight-landing [class*='card']::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #d97706, #fbbf24);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.sl-starlight-landing [class*='card']:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(217, 119, 6, 0.12);
+  border-color: color-mix(in srgb, var(--sl-color-accent) 30%, var(--sl-color-hairline));
+}
+.sl-starlight-landing [class*='card']:hover::before {
+  opacity: 1;
+}
+
+/* ===== 表格美化 ===== */
 table {
   border-collapse: collapse;
   width: 100%;
-  margin: 1rem 0;
+  margin: 1.25rem 0;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--sl-color-hairline);
 }
 
 th {
-  background-color: var(--sl-color-accent-low);
+  background: linear-gradient(135deg, #92400e, #78350f);
   color: #fafaf9;
   padding: 0.75rem 1rem;
   text-align: left;
   font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
 }
 
 td {
-  padding: 0.625rem 1rem;
+  padding: 0.65rem 1rem;
   border-bottom: 1px solid var(--sl-color-hairline);
+  font-size: 0.95rem;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+tr:hover td {
+  background-color: color-mix(in srgb, var(--sl-color-accent) 6%, transparent);
 }
 
 tr:nth-child(even) td {
-  background-color: color-mix(in srgb, var(--sl-color-accent) 5%, transparent);
+  background-color: color-mix(in srgb, var(--sl-color-accent) 3%, transparent);
 }
 
-/* 提示框样式 */
+tr:nth-child(even):hover td {
+  background-color: color-mix(in srgb, var(--sl-color-accent) 8%, transparent);
+}
+
+/* ===== 代码块 ===== */
+pre {
+  border-radius: 10px;
+  border: 1px solid var(--sl-color-hairline);
+}
+
+code {
+  font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+/* ===== 提示框 ===== */
 [role='note'] {
   border-left: 4px solid var(--sl-color-accent);
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
 }
 
-/* 代码块圆角 */
-pre {
-  border-radius: 8px;
+/* ===== 侧边栏 ===== */
+.sidebar {
+  scrollbar-width: thin;
+  scrollbar-color: var(--sl-color-hairline-light) transparent;
 }
 
-/* 滚动条美化 */
+.sidebar a {
+  border-radius: 6px !important;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.sidebar a[aria-current='page'] {
+  background: color-mix(in srgb, var(--sl-color-accent) 12%, transparent) !important;
+  color: var(--sl-color-text-accent) !important;
+  font-weight: 600;
+}
+
+.sidebar-label {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--sl-color-text-muted);
+}
+
+/* ===== 导航栏 ===== */
+.header {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* ===== 页面标题 ===== */
+.page-title {
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+.page-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #d97706, transparent);
+  border-radius: 2px;
+}
+
+/* ===== 搜索框 ===== */
+[aria-label='Search'] {
+  border-radius: 8px !important;
+  border-color: var(--sl-color-hairline) !important;
+  transition: border-color 0.2s ease;
+}
+[aria-label='Search']:focus {
+  border-color: var(--sl-color-accent) !important;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--sl-color-accent) 20%, transparent) !important;
+}
+
+/* ===== 滚动条 ===== */
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+  width: 6px;
+  height: 6px;
 }
-
 ::-webkit-scrollbar-track {
-  background: var(--sl-color-bg);
+  background: transparent;
 }
-
 ::-webkit-scrollbar-thumb {
   background: var(--sl-color-hairline-light);
-  border-radius: 4px;
+  border-radius: 3px;
 }
-
 ::-webkit-scrollbar-thumb:hover {
   background: var(--sl-color-accent);
 }
 
+/* ===== 链接 ===== */
+a {
+  transition: color 0.15s ease;
+}
+
+/* ===== 首页 Banner ===== */
+.hero-banner {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+.content a:not([class]) {
+  text-decoration-color: color-mix(in srgb, var(--sl-color-accent) 40%, transparent);
+  text-underline-offset: 3px;
+}
+.content a:not([class]):hover {
+  text-decoration-color: var(--sl-color-accent);
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 768px) {
+  .sl-starlight-landing .hero h1 {
+    font-size: 2rem !important;
+  }
+  table {
+    font-size: 0.85rem;
+  }
+  th, td {
+    padding: 0.5rem 0.65rem;
+  }
+}

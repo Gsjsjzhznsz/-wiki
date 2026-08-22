@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#fbbf24"/><stop offset="100%" style="stop-color:#d97706"/></linearGradient></defs><rect width="128" height="128" rx="24" fill="url(#g)"/><text x="64" y="88" text-anchor="middle" font-family="sans-serif" font-weight="bold" font-size="72" fill="#1c1917">秋</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="100%" style="stop-color:#92400e"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#g)"/>
+  <text x="64" y="90" text-anchor="middle" font-family="system-ui,sans-serif" font-weight="800" font-size="72" fill="#1c1917" opacity="0.9">秋</text>
+</svg>

@@ -1,0 +1,227 @@
+---
+import { Image } from 'astro:assets';
+import serverIcon from '../assets/server-icon.png';
+---
+
+<div class="server-status-wrapper">
+  <div class="server-status-card" id="server-status">
+    <div class="status-header">
+      <img src={serverIcon.src} alt="Server Icon" class="server-icon" width="48" height="48" />
+      <div class="status-title-group">
+        <h3 class="status-title">服务器实时状态</h3>
+        <span class="status-badge" id="status-badge">检测中...</span>
+      </div>
+    </div>
+    <div class="status-grid" id="status-grid">
+      <div class="status-item">
+        <span class="status-label">在线玩家</span>
+        <span class="status-value" id="s-players">--</span>
+      </div>
+      <div class="status-item">
+        <span class="status-label">延迟</span>
+        <span class="status-value" id="s-ping">-- ms</span>
+      </div>
+      <div class="status-item full-width">
+        <span class="status-label">版本</span>
+        <span class="status-value version-text" id="s-version">--</span>
+      </div>
+      <div class="status-item full-width motd-item">
+        <span class="status-label">MOTD</span>
+        <span class="status-value motd-text" id="s-motd">--</span>
+      </div>
+    </div>
+    <div class="status-footer">
+      <button class="refresh-btn" id="refresh-btn" title="刷新状态">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/></svg>
+        刷新
+      </button>
+      <span class="update-time" id="update-time">等待数据...</span>
+    </div>
+  </div>
+</div>
+
+<script>
+  const API_URL = 'https://list.mczfw.com/api/mysv.dpdns.org';
+  
+  async function fetchStatus() {
+    const badge = document.getElementById('status-badge');
+    const players = document.getElementById('s-players');
+    const ping = document.getElementById('s-ping');
+    const version = document.getElementById('s-version');
+    const motd = document.getElementById('s-motd');
+    const updateTime = document.getElementById('update-time');
+
+    try {
+      const resp = await fetch(API_URL);
+      if (!resp.ok) throw new Error('API Error');
+      const data = await resp.json();
+
+      const p = parseInt(data.p) || 0;
+      const mp = parseInt(data.mp) || 0;
+      const pingVal = parseInt(data.ping) || 0;
+
+      // Update status
+      badge.textContent = '在线';
+      badge.className = 'status-badge online';
+      players.textContent = p + ' / ' + mp;
+      players.className = 'status-value';
+
+      // Ping color
+      ping.textContent = pingVal + ' ms';
+      ping.className = 'status-value' + (pingVal < 50 ? ' ping-good' : pingVal < 100 ? ' ping-mid' : ' ping-bad');
+
+      version.textContent = data.version || '--';
+      motd.textContent = data.motd || '--';
+
+      const now = new Date();
+      updateTime.textContent = '更新于 ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0') + ':' + now.getSeconds().toString().padStart(2,'0');
+    } catch (e) {
+      badge.textContent = '离线';
+      badge.className = 'status-badge offline';
+      players.textContent = '-- / --';
+      ping.textContent = '-- ms';
+      ping.className = 'status-value';
+      version.textContent = '无法连接';
+      motd.textContent = '服务器离线或API不可用';
+      updateTime.textContent = '获取失败';
+    }
+  }
+
+  // Initial fetch
+  fetchStatus();
+  // Auto refresh every 60s
+  setInterval(fetchStatus, 60000);
+  // Manual refresh
+  document.getElementById('refresh-btn')?.addEventListener('click', fetchStatus);
+</script>
+
+<style>
+  .server-status-wrapper {
+    margin: 2rem 0;
+  }
+  .server-status-card {
+    background: var(--sl-color-panel);
+    border: 1px solid var(--sl-color-hairline-light);
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 560px;
+    margin: 0 auto;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    transition: box-shadow 0.3s ease;
+  }
+  .server-status-card:hover {
+    box-shadow: 0 8px 32px rgba(217, 119, 6, 0.1);
+  }
+  .status-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+  }
+  .server-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    image-rendering: pixelated;
+    border: 2px solid var(--sl-color-hairline-light);
+  }
+  .status-title-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .status-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--sl-color-text);
+  }
+  .status-badge {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.15rem 0.6rem;
+    border-radius: 999px;
+    display: inline-block;
+    width: fit-content;
+  }
+  .status-badge.online {
+    background: rgba(22, 163, 74, 0.15);
+    color: #4ade80;
+  }
+  .status-badge.offline {
+    background: rgba(239, 68, 68, 0.15);
+    color: #f87171;
+  }
+  .status-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .status-item {
+    background: color-mix(in srgb, var(--sl-color-accent) 5%, var(--sl-color-panel));
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+  .status-item.full-width {
+    grid-column: 1 / -1;
+  }
+  .status-label {
+    font-size: 0.75rem;
+    color: var(--sl-color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .status-value {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--sl-color-text);
+  }
+  .version-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .motd-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--sl-color-text-accent);
+  }
+  .ping-good { color: #4ade80; }
+  .ping-mid { color: #fbbf24; }
+  .ping-bad { color: #f87171; }
+  .status-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--sl-color-hairline);
+  }
+  .refresh-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: 1px solid var(--sl-color-hairline-light);
+    color: var(--sl-color-text-muted);
+    padding: 0.3rem 0.75rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: all 0.2s;
+  }
+  .refresh-btn:hover {
+    color: var(--sl-color-accent);
+    border-color: var(--sl-color-accent);
+  }
+  .update-time {
+    font-size: 0.75rem;
+    color: var(--sl-color-text-muted);
+  }
+  @media (max-width: 480px) {
+    .status-grid { grid-template-columns: 1fr; }
+    .server-status-card { padding: 1rem; }
+  }
+</style>
