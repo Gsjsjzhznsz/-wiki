@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
 export default defineConfig({
-  site: 'https://gsjsjzhznsz.github.io/-wiki/',
+  site: 'https://www.mysv.dpdns.org/',
   integrations: [
     starlight({
       title: '一秋小镇 Wiki',
