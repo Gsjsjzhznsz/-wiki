@@ -162,4 +162,4 @@ NPC 动作和姿势在玩家远离后不会播放动画（因为不在渲染距�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/HttpsShadow/FancyNpcs/wiki)。
+> 更多详细信息请参阅 [官方文档](https://docs.fancyinnovations.com/fancynpcs)。

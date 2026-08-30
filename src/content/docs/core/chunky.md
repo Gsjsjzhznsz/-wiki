@@ -65,4 +65,4 @@ A: 感谢你的热心，但预生成工作由管理员在后台执行，无需�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://wiki.bg-software.com/wiki/Chunky/)。
+> 更多详细信息请参阅 [官方文档](https://github.com/pop4959/Chunky/wiki)。

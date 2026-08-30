@@ -53,4 +53,4 @@ A: 不会。Orebfuscator 作用于服务端数据层面，与客户端资源包�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/RealB0B/orebfuscator/wiki)。
+> 更多详细信息请参阅 [官方文档](https://github.com/Imprex-Development/orebfuscator)。

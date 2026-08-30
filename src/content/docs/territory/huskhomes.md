@@ -313,4 +313,4 @@ A: 到达后，该玩家在你领地内的行为仍受 Dominion 领地权限控�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://william278.net/docs/huskhomes/)。
+> 更多详细信息请参阅 [官方文档](https://william278.net/docs/huskhomes)。

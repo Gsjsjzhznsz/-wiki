@@ -73,4 +73,4 @@ A: 根据数据类型不同，保留 14 至 90 天不等，详见上方表格。
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/OmniTrack)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project/P4ixZGyb)。

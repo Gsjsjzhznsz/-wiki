@@ -144,4 +144,4 @@ vanish++ 在多个层面隐藏管理员的踪迹：
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/Draycia/VanishPP)。
+> 更多详细信息请参阅 [官方文档](https://github.com/TheCommandCraft/Vanishpp)。

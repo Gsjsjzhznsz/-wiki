@@ -130,4 +130,4 @@ LiteSignIn 是一秋小镇服务器的每日签到奖励插件。玩家每天登
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/LiteSignIn)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project)。

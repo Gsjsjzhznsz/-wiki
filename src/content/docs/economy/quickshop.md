@@ -152,4 +152,4 @@ A: 服务器设有专门的**商业区**，你可以在商业区内浏览各玩�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/OPbbs/QuickShop-Hikari/wiki)。
+> 更多详细信息请参阅 [官方文档](https://quickshop-community.github.io/QuickShop-Hikari-Documents)。

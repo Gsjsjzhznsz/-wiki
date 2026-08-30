@@ -65,4 +65,4 @@ AutoViaUpdater 会定期检查 Via 系列插件的最新版本，并在服务器
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://wiki.viaversion.com/)。
+> 更多详细信息请参阅 [官方文档](https://docs.viaversion.com)。

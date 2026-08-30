@@ -157,4 +157,4 @@ WorldEdit 原生的选区仅通过粒子效果和聊天栏文字提示边界，�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://enginehub.org/wiki/WorldEdit)。
+> 更多详细信息请参阅 [官方文档](https://worldedit.enginehub.org/en/latest)。

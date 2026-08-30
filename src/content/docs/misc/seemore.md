@@ -96,4 +96,4 @@ SeeMore 的视距设置不能超过服务器 `server.properties` 中 `view-dista
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/SeeMore)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project/IEt1Yy3F)。

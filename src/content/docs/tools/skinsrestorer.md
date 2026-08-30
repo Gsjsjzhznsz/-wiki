@@ -155,4 +155,4 @@ SkinsRestorer 的皮肤请求会经过服务端缓存队列。在多人同时设
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://skinsrestorer.net/)。
+> 更多详细信息请参阅 [官方文档](https://skinsrestorer.net/docs)。

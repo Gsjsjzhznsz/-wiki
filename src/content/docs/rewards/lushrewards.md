@@ -110,4 +110,4 @@ LushRewards 与一秋小镇的其他系统存在联动关系：
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/LushRewards)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project)。

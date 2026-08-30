@@ -132,4 +132,4 @@ A: 支持。管理员可以配置「用 A 物品交换 B 物品」的交易，�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/ExoShopkeepers)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project)。

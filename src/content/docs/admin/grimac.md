@@ -159,4 +159,4 @@ GrimAC 使用 **VL（Violation Level，违规值）** 系统来衡量作弊严�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/GrimAnticheat/Grim/issues)。
+> 更多详细信息请参阅 [官方文档](https://grim.ac/page/docs)。

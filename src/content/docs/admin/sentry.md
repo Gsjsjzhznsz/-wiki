@@ -165,4 +165,4 @@ Sentry 插件的配置文件 `plugins/Sentry/config.yml` 核心参数：
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://sentry.io/)。
+> 更多详细信息请参阅 [官方文档](https://modrinth.com/plugin/sentry-plugin/)。

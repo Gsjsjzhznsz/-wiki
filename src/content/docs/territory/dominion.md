@@ -221,4 +221,4 @@ A: 在已有领地内部使用木斧选定更小的矩形区域，然后执行 `
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/lycoris0613/Dominion/wiki)。
+> 更多详细信息请参阅 [官方文档](https://dev.bukkit.org/projects/dominion)。

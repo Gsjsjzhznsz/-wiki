@@ -150,4 +150,4 @@ A: InstaRestock 主要为**出售商店**设计。对于收购商店（Buying）
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/InstaRestock)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project/5kZMR4tZ)。

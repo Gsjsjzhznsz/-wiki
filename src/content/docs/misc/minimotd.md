@@ -123,4 +123,4 @@ MOTD 中的中文在部分旧版客户端上可能显示为方块。MiniMOTD 使
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/kennytv/MiniMOTD/wiki)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project/16vhQOQN)。

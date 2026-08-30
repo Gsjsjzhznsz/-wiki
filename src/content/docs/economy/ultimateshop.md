@@ -121,4 +121,4 @@ A: 视情况而定。全局商店价格稳定但可能不是最低；玩家商�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/Ultimate-Kits/UltimateShop/wiki)。
+> 更多详细信息请参阅 [官方文档](https://ultimateshop.superiormc.cn)。

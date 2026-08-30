@@ -134,4 +134,4 @@ formats:
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/FairyChat)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project/gnSidBpb)。

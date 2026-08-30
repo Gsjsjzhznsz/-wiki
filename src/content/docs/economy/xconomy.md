@@ -127,4 +127,4 @@ A: 可以。XConomy 支持离线转账，对方下次上线时会收到转账通
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/YiCaiYin/XConomy/wiki)。
+> 更多详细信息请参阅 [官方文档](https://github.com/YiC200333/XConomy)。

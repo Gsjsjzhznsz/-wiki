@@ -72,4 +72,4 @@ Geyser 是一个协议翻译中间件，它运行在服务端，负责在 Java �
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://wiki.geysermc.org/)。
+> 更多详细信息请参阅 [官方文档](https://geysermc.org/wiki)。

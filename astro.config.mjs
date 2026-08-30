@@ -26,7 +26,7 @@ export default defineConfig({
         {
           label: '核心系统',
           items: [
-            { label: 'Folia 多线程内核', link: '/core/folia' },
+            { label: 'Lophine 多线程内核', link: '/core/folia' },
             { label: '版本兼容 (Via系列)', link: '/core/viaversion' },
             { label: '基岩版互通 (Geyser)', link: '/core/geyser' },
             { label: 'Chunky 区块预生成', link: '/core/chunky' },

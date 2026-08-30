@@ -116,4 +116,4 @@ EasyBot 的配置文件位于 `plugins/EasyBot/config.yml`，管理员可以在�
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/EasyBot)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project/K5DNl62U)。

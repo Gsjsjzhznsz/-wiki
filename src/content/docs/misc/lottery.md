@@ -64,4 +64,4 @@ A: 使用 `/lottery history` 命令可以查看你近期的抽奖记录。
 
 ## 官方文档
 
-> 更多详细信息请参阅 [MCBBS 插件讨论区](https://www.mcbbs.net/)。
+> 更多详细信息请参阅 [官方文档](https://www.minebbs.com/resources/bluedream-lottery-gui-folia-x.15023)。

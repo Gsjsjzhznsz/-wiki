@@ -130,4 +130,4 @@ zMenu 在一秋小镇中与多个插件紧密集成，作为统一的 GUI 入口
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/novola187/zMenu)。
+> 更多详细信息请参阅 [官方文档](https://docs.groupez.dev/zmenu/getting-started)。

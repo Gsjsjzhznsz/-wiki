@@ -122,4 +122,4 @@ Minecraft 支持多种世界生成类型，Worlds 插件在此基础上提供了
 
 ## 官方文档
 
-> 更多详细信息请参阅 [官方文档](https://github.com/Ineusia/Worlds/wiki)。
+> 更多详细信息请参阅 [Modrinth 项目页](https://modrinth.com/project)。
