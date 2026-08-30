@@ -107,3 +107,7 @@ LushRewards 与一秋小镇的其他系统存在联动关系：
 | LiteSignIn | 签到奖励和在线奖励独立计算，互不影响 |
 | LuckPerms | 里程碑称号通过 LuckPerms 权限组实现 |
 | zMenu | 可通过 zMenu 快捷菜单查看在线奖励进度 |
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/novola187/LushRewards)。

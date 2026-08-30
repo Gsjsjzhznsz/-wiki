@@ -127,3 +127,7 @@ zMenu 在一秋小镇中与多个插件紧密集成，作为统一的 GUI 入口
 | LushRewards | 命令调用 | 通过菜单查看在线奖励 |
 | PlaceholderAPI | 变量替换 | 在菜单项上显示动态玩家信息 |
 | XConomy | 变量替换 | 在菜单中显示玩家余额 |
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/novola187/zMenu)。

@@ -113,3 +113,7 @@ EasyBot 的配置文件位于 `plugins/EasyBot/config.yml`，管理员可以在�
 
 [!WARNING]
 管理员在修改 EasyBot 配置时，请确保回复内容符合服务器规范。修改配置后需要使用 `/easybot reload` 命令重载配置才能生效。建议在修改前备份原始配置文件。
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/novola187/EasyBot)。

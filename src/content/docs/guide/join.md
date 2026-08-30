@@ -13,7 +13,9 @@ description: Java 版和基岩版的多端接入方式与地址信息
 |--------|------|------|------|
 | **Java 版（主）** | `mysv.dpdns.org` | 默认（25565） | 推荐首选，DDNS 自动解析 |
 | **Java 版（备用）** | `frp-oak.com` | 58016 | 主地址不通时使用，FRP 内网穿透 |
-| **基岩版（BE）** | `be.mysv.dpdns.org` | 19131 | 手机/Win10/主机端专用 |
+| **基岩版（BE）1** | `be.mysv.dpdns.org` | 19131 | 手机/Win10/主机端专用 |
+| **基岩版（BE）2** | `cn-hk2.mfrp.space` | 30836 | FRP 备用基岩线路 |
+| **基岩版（BE）3** | `frp-top.com` | 22512 | FRP 备用基岩线路 |
 | **IPv6 直连** | `ipv6.mysv.dpdns.org` | 19131 | 支持 IPv6 的网络环境 |
 
 ## Java 版接入

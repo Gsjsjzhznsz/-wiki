@@ -82,3 +82,7 @@ ViaAprilFools 是被动型插件，不需要玩家或管理员进行任何特殊
 
 [!TIP]
 如果你想体验愚人节版本，可以在 Minecraft 启动器中启用「启用快照」选项，然后在版本列表中选择以愚人节命名的快照版本进行下载和安装。
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/ViaVersion/ViaVersion/wiki)。

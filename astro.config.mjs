@@ -29,6 +29,7 @@ export default defineConfig({
             { label: 'Folia 多线程内核', link: '/core/folia' },
             { label: '版本兼容 (Via系列)', link: '/core/viaversion' },
             { label: '基岩版互通 (Geyser)', link: '/core/geyser' },
+            { label: 'Chunky 区块预生成', link: '/core/chunky' },
             { label: '性能监控', link: '/core/performance' },
           ],
         },
@@ -69,6 +70,8 @@ export default defineConfig({
             { label: 'GrimAC 反作弊', link: '/admin/grimac' },
             { label: 'Sentry 日志监控', link: '/admin/sentry' },
             { label: 'vanish++ 隐身管理', link: '/admin/vanish' },
+            { label: 'Orebfuscator 矿石混淆', link: '/admin/orebfuscator' },
+            { label: 'OmniTrack 行为追踪', link: '/admin/omnitrack' },
           ],
         },
         {
@@ -93,6 +96,7 @@ export default defineConfig({
             { label: 'Worlds 多世界', link: '/misc/worlds' },
             { label: 'MiniMOTD 服务器图标', link: '/misc/minimotd' },
             { label: 'ViaAprilFools', link: '/misc/viaaprilfools' },
+            { label: 'BlueDream Lottery', link: '/misc/lottery' },
             { label: '插件总览', link: '/plugins/overview' },
           ],
         },
@@ -111,7 +115,7 @@ export default defineConfig({
         },
         {
           label: '世界地图',
-          href: 'http://cn-hk1.mfrp.space:30212',
+          href: 'http://cn-hk2.mfrp.space:43545',
           icon: 'external',
         },
       ],

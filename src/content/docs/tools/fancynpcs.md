@@ -159,3 +159,7 @@ NPC 动作和姿势在玩家远离后不会播放动画（因为不在渲染距�
 - 使用 `/npc select <ID>` 选中后进行编辑
 - 使用 `/npc copy <ID>` 可以快速复制相似的 NPC，然后修改差异部分
 - 复杂的批量操作请联系管理员通过配置文件处理
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/HttpsShadow/FancyNpcs/wiki)。

@@ -191,3 +191,7 @@ LuckPerms 通过 Vault API 与其他插件进行权限交互。一秋小镇服�
 | Web 编辑器无法连接 | 端口未开放或地址配置错误 | 检查 `config.yml` 中的 web 编辑器配置 |
 | 权限继承冲突 | 多组之间存在同名权限 | 使用权重系统调整优先级 |
 | MySQL 连接失败 | 数据库凭证或网络问题 | 检查 `storage-config.yml` 配置 |
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://luckperms.net/wiki)。

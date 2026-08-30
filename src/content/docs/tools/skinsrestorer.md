@@ -152,3 +152,7 @@ SkinsRestorer 的皮肤请求会经过服务端缓存队列。在多人同时设
 - **Sodium**：Sodium 通常与 SkinsRestorer 兼容良好
 - **LabyMod**：LabyMod 有自己的皮肤系统，可能覆盖服务器下发的皮肤
 - 如果使用客户端皮肤 Mod，建议优先在 Mod 设置中关闭「自定义皮肤」功能，以服务器皮肤为准
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://skinsrestorer.net/)。

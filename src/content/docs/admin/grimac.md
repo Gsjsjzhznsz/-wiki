@@ -156,3 +156,7 @@ GrimAC 使用 **VL（Violation Level，违规值）** 系统来衡量作弊严�
 
 [!NOTE]
 > `/grim alerts` 命令建议管理员在日常管理中保持开启。当检测到高危作弊时，系统会在管理员聊天中实时推送警报信息。
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/GrimAnticheat/Grim/issues)。

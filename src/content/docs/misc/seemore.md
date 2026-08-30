@@ -93,3 +93,7 @@ SeeMore 的配置文件位于 `plugins/SeeMore/config.yml`。
 
 [!WARNING]
 SeeMore 的视距设置不能超过服务器 `server.properties` 中 `view-distance` 设定的硬上限。如果需要提升最大视距，请同时修改服务端配置文件中的对应值。注意过高的视距设置会对服务器内存造成较大压力。
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/novola187/SeeMore)。

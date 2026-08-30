@@ -4,7 +4,7 @@ title: Sentry 日志监控
 
 # Sentry 日志监控
 
-> **插件版本**：Sentry-1.5.0-plugin
+> **插件版本**：Sentry-1.5.4-plugin
 > **适用服务端**：一秋小镇全部服务器
 
 Sentry 是一秋小镇服务器集群的错误日志监控系统。它自动捕获服务器运行过程中的所有异常、错误和性能数据，并通过 Web 控制台进行可视化展示，帮助管理员快速定位和解决问题。
@@ -162,3 +162,7 @@ Sentry 插件的配置文件 `plugins/Sentry/config.yml` 核心参数：
 
 [!NOTE]
 > 一秋小镇的 Sentry 配置中 `send-default-pii` 设为 `false`，不会在错误报告中包含玩家的 IP 地址等敏感信息，仅记录游戏内用户名用于问题关联。
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://sentry.io/)。

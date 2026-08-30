@@ -141,3 +141,7 @@ vanish++ 在多个层面隐藏管理员的踪迹：
 | 其他管理员看不到你 | `vanish.see` 权限未设置 | 管理员组需要 `vanish.see` 权限 |
 | 被动拾取了地上的物品 | `no-pickup` 未开启 | 执行 `/vanish no pickup` |
 | 影子被玩家看到 | Minecraft 客户端渲染限制 | 注意自身光照位置 |
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/Draycia/VanishPP)。

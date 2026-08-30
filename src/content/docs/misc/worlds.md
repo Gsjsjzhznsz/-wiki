@@ -5,7 +5,7 @@ description: worlds-4.3.0-pre1 多世界管理
 
 # Worlds 多世界
 
-> worlds-4.3.0-pre1 | 多世界管理系统
+> worlds-4.4.0 | 多世界管理系统
 
 Worlds 是一秋小镇服务器的多世界管理插件。它允许服务器拥有多个独立的世界，每个世界可以有不同的地形生成规则、游戏规则和环境设置。玩家可以在不同世界之间自由移动，体验不同类型的游戏内容。
 
@@ -119,3 +119,7 @@ Minecraft 支持多种世界生成类型，Worlds 插件在此基础上提供了
 | squaremap | 每个世界有独立的地图渲染 |
 | LuckPerms | 可设置世界特定的权限 |
 | LushRewards | 在线时间统计跨世界计算 |
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://github.com/Ineusia/Worlds/wiki)。

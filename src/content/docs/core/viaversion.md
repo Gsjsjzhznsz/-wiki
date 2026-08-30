@@ -62,3 +62,7 @@ AutoViaUpdater 会定期检查 Via 系列插件的最新版本，并在服务器
 
 [!WARNING]
 > 如果你使用的是 Mod 客户端，请确保你的 Mod 与你选择的 Minecraft 版本匹配。Via 系列仅处理原版协议的转换，不保证所有 Mod 在跨版本连接时的兼容性。
+
+## 官方文档
+
+> 更多详细信息请参阅 [官方文档](https://wiki.viaversion.com/)。
